@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daum Cafe Clone</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../image/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="images/x-icon" href="../image/favicon/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="top-container">
+        <section class="top row">
+            <div class="col-1">
+                <a href="#"><img src="../image/svg/reddit.svg" alt="logo" class="top-logo"></a>
+            </div>
+            <div class="top-right offset-9 col-2 d-flex justify-content-end align-items-center">
+                <a href="#" class="top-login">로그인</a>
+                <a href="#" class="top-email"><i class="ri-mail-line"></i></a>
+                <div class="grid-fill">
+                    <i class="ri-layout-grid-fill"></i>
+                    <div class="subnav">
+                        <div class="d-flex">
+                            <div class="subcol">
+                                <a href="#">
+                                    <img src="images/svg/home.svg" alt="home" /><br>
+                                    카페
+                                </a>
+                            </div>
+                            <div class="subcol">
+                                <a href="#">
+                                    <img src="images/svg/news.svg" alt="news" /><br>
+                                    뉴스
+                                </a>
+                            </div>
+                            <div class="subcol">
+                                <a href="#">
+                                    <img src="images/svg/heat_map.svg" alt="home" /><br>
+                                    지도
+                                </a>
+                            </div>
+                            <div class="subcol">
+                                <a href="#">
+                                    <img src="images/svg/shop.svg" alt="home" /><br>
+                                    쇼핑
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="subcol">
+                                <ul>
+                                    <li><a href="#">티스토리</a></li>
+                                    <li><a href="#">브런치</a></li>
+                                    <li><a href="#">카카오TV</a></li>
+                                    <li><a href="#">게임</a></li>
+                                </ul>
+                            </div>
+                            <div class="subcol">
+                                <ul>
+                                    <li><a href="#">티스토리</a></li>
+                                    <li><a href="#">브런치</a></li>
+                                    <li><a href="#">카카오TV</a></li>
+                                    <li><a href="#">게임</a></li>
+                                </ul>
+                            </div>
+                            <div class="subcol">
+                                <ul>
+                                    <li><a href="#">티스토리</a></li>
+                                    <li><a href="#">브런치</a></li>
+                                    <li><a href="#">카카오TV</a></li>
+                                    <li><a href="#">게임</a></li>
+                                </ul>
+                            </div>
+                            <div class="subcol">
+                                <ul>
+                                    <li><a href="#">티스토리</a></li>
+                                    <li><a href="#">브런치</a></li>
+                                    <li><a href="#">카카오TV</a></li>
+                                    <li><a href="#">게임</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="container">
+            <div class="row top-nav">
+                <div class="col-1"><a href="#" class="main-logo">cafe</a></div>
+                <div class="col-4">
+                    <nav class="nav-menu d-flex justify-content-around">
+                        <a href="#" class="active">홈</a>
+                        <a href="#" class="nav-image">테이블</a>
+                        <a href="#">팬카페</a>
+                        <a href="#">카페랭킹</a>
+                        <a href="#">내카페</a>
+                    </nav>
+                </div>
+                <div class="offset-3 col-4">
+                    <form class="d-flex justify-content-end">
+                        <div class="dropdown">
+                            <div class="dropdown-selected">전체검색 <i id="dropdown-icon" class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="dropdown-options">
+                                <li data-value="all" class="active">전체검색</li>
+                                <li data-value="all-t">통합검색</li>
+                                <li data-value="cafe">카페검색</li>
+                                <li data-value="table">테이블검색</li>
+                                <li data-value="shot">샷검색</li>
+                            </ul>
+                        </div>
+                        <input type="text" class="search-box" name="search" placeholder="검색어를 입력하세요.">
+                        <button type="button" class="search-button"><i class="ri-search-line"></i></button>
+                        <input type="hidden" name="select" id="select">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
