@@ -249,6 +249,10 @@ li.active {
     position: absolute;
 }
 
+.act1{
+    z-index: 1;
+}
+
 .hero-box h2 {
     font-size: 18px;
     font-weight: 700;
