@@ -7,8 +7,7 @@
 body {
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    color: rgb(68, 68, 68);
+    font-size: rgb(68, 68, 68);
 }
 
 a {
@@ -65,7 +64,7 @@ a {
     position: absolute;
     width: 10px;
     height: 6px;
-    background: url("../image/up.jpg") no-repeat;
+    /* background: url("../image/arr-top.jpg") no-repeat; */
     top: -6px;
     right: 0;
 }
@@ -199,26 +198,26 @@ li.active {
     text-decoration: underline;
 }
 
-.subcol ul>li {
+.subcol ul {
     position: relative;
 }
 
-.subcol ul>li::after {
+.subcol ul::after {
     content: "";
     display: block;
     position: absolute;
     width: 1px;
     height: 100px;
-    background: #ccc;
+    background: #eee;
     top: 10px;
 }
 
 .subcol ul a {
-    font-weight: 400;
+    font-weight: 300;
     line-height: 20px;
     color: #000;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-size: 13px;
 }
 
@@ -234,22 +233,40 @@ li.active {
     line-height: 30px;
 }
 
-/* hero */
+/************ HERO ***************/
 .hero {
-    height: 350px;
     margin-top: 50px;
-    padding-bottom: 40px;
-    background: url("../image/kakao.webp") no-repeat right 160px;
-    background-size: 30%;
-    overflow: hidden;
+    padding-bottom: 30px;
+    background: #fff url("../image/kakao.webp") no-repeat right 100px;
+    background-size: 25%;
     position: relative;
+    height: 350px;
 }
 
 .hero-box {
     position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
 }
 
-.act1{
+.btn {
+    position: absolute;
+    z-index: 100;
+    font-size: 100px;
+    color: #999;
+    top: 40%;
+}
+
+.btn-left {
+    left: -150px;
+}
+
+.btn-right {
+    right: -150px;
+}
+
+.act {
     z-index: 1;
 }
 
@@ -269,13 +286,13 @@ li.active {
     margin-top: 20px;
 }
 
-.hero ul a {
+.hero-box ul a {
     display: block;
     line-height: 1.3;
 }
 
-.hero-box ul a:hover,
-.hero-box ul a.active {
+.hero-box ul a:hover span,
+.hero-box ul a.active span {
     font-weight: 700;
 }
 
@@ -299,25 +316,47 @@ li.active {
 
 .hero-box li span:last-child {
     font-size: 14px;
+    color: #999;
     vertical-align: top;
     display: inline-block;
-    width: 100px;
+    width: 80px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
+/**************** section 1 ****************/
+.sc1 {
+    padding: 50px;
+    background: #efefef;
+    border-top: 5px solid #000;
+    border-bottom: 1px solid #ddd;
 }
 
-.hero-box li a:not(first-child) {
-    animation-name: hero-text-animation;
-    animation-duration: 0.8s;
+
+
+.fadeIn1 {
+    animation: fadeIn1 300ms forwards;
 }
 
-@keyframes fadeIn {
+.fadeIn2 {
+    animation: fadeIn2 600ms forwards;
+}
+
+.fadeIn3 {
+    animation: fadeIn3 900ms forwards;
+}
+
+.fadeIn4 {
+    animation: fadeIn4 1200ms forwards;
+}
+
+.fadeIn5 {
+    animation: fadeIn5 1500ms forwards;
+}
+
+
+@keyframes fadeIn1 {
     from {
         opacity: 0;
     }
@@ -327,12 +366,50 @@ li.active {
     }
 }
 
-@keyframes hero-text-animation {
+@keyframes fadeIn2 {
     from {
+        opacity: 0;
         line-height: 1.5;
     }
 
     to {
+        opacity: 1;
+        line-height: 1.3;
+    }
+}
+
+@keyframes fadeIn3 {
+    from {
+        opacity: 0;
+        line-height: 2;
+    }
+
+    to {
+        opacity: 1;
+        line-height: 1.3;
+    }
+}
+
+@keyframes fadeIn4 {
+    from {
+        opacity: 0;
+        line-height: 2.5;
+    }
+
+    to {
+        opacity: 1;
+        line-height: 1.3;
+    }
+}
+
+@keyframes fadeIn5 {
+    from {
+        opacity: 0;
+        line-height: 3;
+    }
+
+    to {
+        opacity: 1;
         line-height: 1.3;
     }
 }
