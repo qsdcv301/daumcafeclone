@@ -1,3 +1,4 @@
+let i = 0;
 $(function () {
     $(".grid-fill").hover(function () {
         $(this).find(".subnav").stop().fadeToggle();
@@ -5,6 +6,18 @@ $(function () {
     $(".hero-box a").hover(function () {
         $(".hero-box a").removeClass("active");
         $(this).addClass("active");
+    });
+
+    $(".btn-left").click(function () {
+        i--;
+        if (i < 1) {
+            i = 7;
+        }
+        console.log(i);
+        $(".hero .hero-box:last").clone().prependTo('.hero');
+        $(".hero .hero-box:last").remove();
+        $('.hero .hero-box:eq(0)').addClass('act');
+        $('.hero .hero-box:eq(0) ul>li:first-child a').addClass("active");
     });
 
     $(".btn-right").click(function () {
@@ -15,7 +28,7 @@ $(function () {
 
 }); // /.jquery
 
-let i = 0;
+
 function fadeInOut() {
     i++;
     if (i > 7) {
