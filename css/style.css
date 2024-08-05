@@ -7,14 +7,18 @@
 body {
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: rgb(68, 68, 68);
+    color: rgb(68, 68, 68);
 }
 
 a {
     text-decoration: none;
     color: rgb(68, 68, 68);
 }
-
+section h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(41, 41, 41);
+}
 /****************** HEADER *****************/
 .top-container {
     width: 1400px;
@@ -327,11 +331,83 @@ li.active {
 
 /**************** section 1 ****************/
 .sc1 {
-    padding: 50px;
+    padding: 80px 50px 50px 50px;
     background: #efefef;
     border-top: 5px solid #000;
     border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 999;
 }
+
+a.sc1-link {
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.03);
+    padding: 20px 30px;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.a.sc1-link:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2),
+        0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.sc1-img-box {
+    float: left;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.sc1-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sc1-link h2 {
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sc1-link p {
+    font-size: 14px;
+    color: #444;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 13px;
+}
+
+.hash {
+    margin-top: 13px;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #666;
+}
+
+.hash span {
+    margin-right: 10px;
+}
+
+.hash span::before {
+    content: "#";
+}
+
+.hash span:first-child {
+    color: #ED3E49;
+}
+
+/**************** section 2 ****************/
+.sc2 {
+    padding: 80px 0px 50px;
+}
+
 
 
 
