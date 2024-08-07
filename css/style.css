@@ -14,11 +14,13 @@ a {
     text-decoration: none;
     color: rgb(68, 68, 68);
 }
-section h1{
+
+section h1 {
     font-size: 20px;
     font-weight: 800;
     color: rgb(41, 41, 41);
 }
+
 /****************** HEADER *****************/
 .top-container {
     width: 1400px;
@@ -408,9 +410,145 @@ a.sc1-link {
     padding: 80px 0px 50px;
 }
 
+.b-table-wrapper {
+    margin-top: 30px;
+    position: relative;
+    height: 250px;
+}
+.b-table-wrapper .table-btn{
+    display: block;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -60px;
+    font-size: 40px;
+    line-height: 0.8;
+    text-align: center;
+    color: #ccc;
+    cursor: default;
+}
+.b-table-wrapper .table-btn.run{
+    cursor: pointer;
+    color: #333;
+}
+.btn-prev{
+    right: 40px;
+    border-right: none;
+}
+.btn-next{
+    right: 0;
+}
+.b-table {
+    /* display: flex; */
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 30px 40px;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    display: none;
+}
 
+.item-first {
+    position: relative;
+}
 
+.item-first::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    background: #eee;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
 
+.table-view {
+    display: flex;
+    align-items: center;
+    width: 360px;
+}
+
+.table-view img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.text-box {
+    margin-left: 15px;
+}
+
+.text-box h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.text-box p{
+    overflow: hidden;
+    max-height: 38px;
+    font-size: 13px;
+    color: #666;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.text-box span{
+    font-size: 12px;
+    margin-right: 8px;
+    word-spacing: 5px;
+}
+.item-first button{
+    display: block;
+    margin-top: 20px;
+    width: 70%;
+    padding: 10px 40px;
+    background: #f7f7f7;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.item-view{
+    display: flex;
+    padding: 0 20px;
+}
+.view-detail{
+    display: block;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 175px;
+}
+.thumb-img{
+    height: 90px;
+}
+.thumb-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.view-detail p strong{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.view-detail p{
+    font-size: 12px;
+    color: #888;
+    line-height: 18px;
+    max-height: 36px;
+    margin-top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0;
+}
+
+/* . */
 .fadeIn1 {
     animation: fadeIn1 300ms forwards;
 }
