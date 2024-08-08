@@ -1,5 +1,13 @@
 let i = 0;
 let count = 0;
+const now = new Date();
+const nowMonth = (now.getMonth() + 1 < 10) ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+const nowDate = (now.getDate() < 10) ? "0" + (now.getDate()) : now.getDate();
+const nowHours = (now.getHours() < 10) ? "0" + (now.getHours()) : now.getHours();
+const nowMinutes = (now.getMinutes() < 10) ? "0" + (now.getMinutes()) : now.getMinutes();
+const nowDay = now.getFullYear() + "." + nowMonth + "." + nowDate + ".";
+const nowTime = nowHours + ":" + nowMinutes;
+
 $(function () {
     $(".grid-fill").hover(function () {
         $(this).find(".subnav").stop().fadeToggle();
@@ -38,7 +46,7 @@ $(function () {
                 $(".btn-prev").removeClass("run");
             } else {
                 count--;
-                if (count < bTableCount - 2) {
+                if (count > bTableCount - 2) {
                     $(".btn-next").addClass("run");
                 }
             }
@@ -50,6 +58,20 @@ $(function () {
     $(".btn-prev.run").click(function (e) {
         e.preventDefault();
         alert("누름");
+    });
+
+    $(".text-date").html(nowDay + "<strong>" + nowTime + "</strong>");
+
+    $.ajax({
+        url: "../data/data.json",
+        dataType: "json",
+        success: function (data) {
+            $(".best_ul").html(displayData(data));
+            console.log(data);
+        },
+        error: function (xhr, status, error) {
+            console.error("에러가 났습니다.", error);
+        }
     });
 
 }); // /.jquery
@@ -67,4 +89,27 @@ function fadeInOut() {
     $(".hero .hero-box:eq(0)").remove();
     $('.hero .hero-box:eq(0)').addClass('act');
     $('.hero .hero-box:eq(0) ul>li:first-child a').addClass("active");
+}
+
+function displayData(data) {
+    let htmlData = "";
+    for (let i = 0; i < data.length; i++) {
+        htmlData += `<li>
+                        <a href="${data[i].list}">
+                            <div class="thumb_list"><img src="../image/${data[i].img}" alt="001"></div>
+                            <div class="text_list">
+                                <span>${data[i].id}</span>
+                                <p class="text_p_list">
+                                    ${data[i].title}
+                                </p>
+                            </div>
+                            <div class="writer_list">
+                                
+                                <span class="writer">${data[i].writer}</span>
+                                <span class="comment">${data[i].comment}</span>
+                            </div>
+                        </a>
+                    </li>`;
+    }
+    return htmlData;
 }
