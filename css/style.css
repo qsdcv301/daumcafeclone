@@ -161,6 +161,7 @@ li.active {
 .search-box {
     border: none;
     padding: 0 5px;
+    
 }
 
 .search-box:focus {
@@ -693,6 +694,161 @@ a.sc1-link {
     transform: rotate(20deg);
 }
 
+/* notice 자작 */
+.notice h2{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.notice p{
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.notice p>a{
+    color: #666;
+}
+
+.notice a:hover{
+    text-decoration: underline;
+}
+
+.notice-img{
+    padding-top: 50px;
+    position: relative;
+    width: 400px;
+}
+
+.notice-img img{
+    margin-top: 20px;
+    position: absolute;
+    max-width: 100%;
+}
+
+/* cafe-fan 자작 */
+
+.cafe-fan{
+    background: #efefef;
+    padding-bottom: 50px;
+}
+
+.cafe-fan-header{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.cafe-fan-header h1{
+    font-size: 25px;
+}
+
+.cafe-fan-header a{
+    float: right;
+}
+
+.cafe-fan-header a:hover{
+    text-decoration: underline;
+}
+
+.cafe-fan-imgs{
+    padding: 5px;
+}
+
+.cafe-fan-imgs>div{
+    width: 425px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cafe-fan-imgs>div:last-child{
+    margin-right: 0;
+}
+
+.cafe-fan-imgs>div:hover{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cafe-fan-imgs img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.cafe-fan-rank{
+    background: #000;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+.cafe-fan-rank span{
+    color: #999;
+}
+
+.cafe-fan-info{
+    position: absolute;
+    background: #fff;
+    width: 425px;
+    height: 120px;
+    bottom: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.cafe-fan-img-box{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cafe-fan-img-box img{
+    object-fit: cover;
+}
+
+.cafe-fan-info-text{
+    padding-left: 20px;
+}
+
+.cafe-fan-info-text h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.cafe-fan-info-text span{
+    font-size: 14px;
+    color: #666;
+}
+
+.pink{
+    background: pink;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.yellow{
+    background: yellow;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
 /* . */
 .fadeIn1 {
     animation: fadeIn1 300ms forwards;
