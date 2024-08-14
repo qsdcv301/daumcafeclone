@@ -74,7 +74,7 @@ $(function () {
         }
     });
 
-    setInterval(cafeSupporters, 5000);
+    // setInterval(cafeSupporters, 5000);
 }); // /.jquery
 function fadeOutIn() {
     let ct = $(".hero-box").length;
@@ -116,13 +116,13 @@ function displayData(data) {
 }
 
 
-function cafeSupporters() {
-    const cafeSupportersImg = document.querySelectorAll(".notice-img img");
-    cafeSupportersImg.forEach(function (key) {
-        if(key.classList.contains("act")){
-            key.classList.remove("act");
-        }else{
-            key.classList.add("act");
-        }
-    });
-}
+// function cafeSupporters() {
+//     const cafeSupportersImg = document.querySelectorAll(".notice-img img");
+//     cafeSupportersImg.forEach(function (key) {
+//         if(key.classList.contains("act")){
+//             key.classList.remove("act");
+//         }else{
+//             key.classList.add("act");
+//         }
+//     });
+// }
