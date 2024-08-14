@@ -161,7 +161,7 @@ li.active {
 .search-box {
     border: none;
     padding: 0 5px;
-    
+
 }
 
 .search-box:focus {
@@ -692,6 +692,193 @@ a.sc1-link {
     display: block;
     background: #999;
     transform: rotate(20deg);
+}
+
+/****************** 공지사항 ******************/
+
+.notice-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pd-l-50 {
+    padding-left: 50px;
+}
+
+.notice-title a {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.notice-title a span {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 10px;
+    color: #ED3E49;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.notice-list a {
+    color: #666;
+    font-size: 13px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    letter-spacing: 1px;
+    padding: 8px 0;
+}
+
+.notice-list a:hover {
+    text-decoration: underline;
+}
+
+.c-support {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.support-box {
+    width: 100%;
+    height: 250px;
+}
+
+.support-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/****************** 팬카페 ******************/
+.f-cafe {
+    padding: 80px 50px 50px;
+    background: #efefef;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.gate-kr {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ED3E49;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+a.card {
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+a.card:hover {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2),
+        0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.black-card {
+    position: absolute;
+    width: 58px;
+    height: 56px;
+    background: #000;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 8px;
+}
+
+.black-card span {
+    display: inline-block;
+    height: 2px;
+    width: 15px;
+    background: #fff;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    background: #fff;
+    padding: 30px 25px 25px;
+}
+
+.thumb {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    float: left;
+    margin-right: 25px;
+}
+
+.card-content h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.state span {
+    font-size: 13px;
+    color: #666;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.state span:first-child::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #ED3E49;
+    display: block;
+    left: 0;
+    top: 5px;
+    position: absolute;
+}
+
+.state span:last-child::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: rgb(231, 231, 0);
+    display: block;
+    left: 0;
+    top: 5px;
+    position: absolute;
 }
 
 /* notice 자작 */
