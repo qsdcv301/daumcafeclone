@@ -1037,6 +1037,85 @@ a.card:hover {
     margin-left: 5px;
 } */
 /* . */
+
+/*************** f-navi ****************/
+strong {
+    font-weight: bold;
+}
+
+.f-navi {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.f-navi h1 {
+    margin-bottom: 30px;
+}
+
+.f-navi h1 span {
+    font-weight: 300;
+}
+
+.f-navi div {
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.f-navi a {
+    margin-right: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.f-navi a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #ED3E49;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: transform 500ms ease;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.f-navi a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    font-size: 12px;
+}
+
+footer h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-menu{
+    margin-bottom: 5px;
+}
+
+.footer-menu span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer img {
+    position: absolute;
+    width: 200px;
+    right: 350px;
+    top: -20px;
+}
+
 .fadeIn1 {
     animation: fadeIn1 300ms forwards;
 }
